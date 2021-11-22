@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
 
+    <h1>Lista di email random</h1>
+
     <!-- istanza app di Vue  -->
     <div id="app">
         <ul>
-            la lista è visibile solo quando tutti gli indirizzi email sono stati generati
+            <!-- la lista è visibile solo quando tutti gli indirizzi email sono stati generati -->
             <li v-for="email in emailList" v-if="emailList.length === 10">
                 {{ email }}
             </li>
