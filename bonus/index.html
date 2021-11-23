@@ -13,9 +13,9 @@
 
     <!-- istanza app di Vue  -->
     <div id="app">
-        <ul>
+        <ul v-if="emailList.length === 10">
             <!-- la lista è visibile solo quando tutti gli indirizzi email sono stati generati -->
-            <li v-for="email in emailList" v-if="emailList.length === 10">
+            <li v-for="email in emailList">
                 {{ email }}
             </li>
         </ul>
